@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Home</title>
     <link rel="stylesheet" href="../css/style.css">
+    <title>Home</title>
 </head>
 
 <body class="background-image-site margin-0">
@@ -33,27 +33,30 @@
                 <div class="form-container">
                     <h1 class="form-header">Login</h1>
                     <br>
+                    <section class="message"></section>
                     <div class="form-control">
-                        <label for="email"><b>Email</b></label>
-                        <input type="text" placeholder="Enter Email" name="email" required>
+                        <label for="email">
+                            <b>Email</b>
+                        </label>
+                        <input type="email" placeholder="Enter Email" id="email" name="email" required>
                     </div>
                     <div class="form-control">
-                        <label for="psw"><b>Password</b></label>
-                        <input type="password" placeholder="Enter Password" name="psw" required>
+                        <label for="psw">
+                            <b>Password</b>
+                        </label>
+                        <input type="password" placeholder="Enter Password" id="password" name="psw" required>
 
                     </div>
-                    <select id="role" onchange="changeLink()">
-                        <option value="User">User</option>
-                        <option value="Admin">Admin</option>
-                    </select>
                     <br>
-                    <a class="btn btn-success" id="login" href="index-user.html">Login</a>
-                    <p>Are you new here? You can <a href="./user-register.html">register here</a></p>
+                    <button class="btn btn-success" id="login" type="submit">Login</button>
+                    <p>Are you new here? You can
+                        <a href="../signup/signup.html">register here</a>
+                    </p>
                 </div>
             </form>
         </div>
     </main>
-    <script src="../js/script.js"></script>
+    <script src="../dist/bundle.js"></script>
 
 </body>
 
