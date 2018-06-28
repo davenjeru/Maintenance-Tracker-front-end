@@ -87,7 +87,8 @@ if (adminEmailContainer) {
 
                 // create the column to add the request date and append to the row
                 let requestDate = document.createElement('td');
-                requestDate.innerHTML = request.date_requested;
+            let dateRequested = new Date(request.date_requested);
+            requestDate.innerHTML = dateRequested.toDateString();
                 row.appendChild(requestDate);
 
                 // create the column to add the request status and append to the row
