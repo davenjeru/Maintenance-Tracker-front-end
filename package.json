@@ -1,0 +1,31 @@
+{
+  "name": "maintenance-tracker-front-end",
+  "version": "1.0.0",
+  "description": "A front end project that consumes the Maintenace Tracker API v1",
+  "main": "entry.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davenmathews/Maintenance-Tracker-front-end.git"
+  },
+  "keywords": [
+    "Vanilla",
+    "JavaScript",
+    "JS",
+    "VanillaJS",
+    "front-end"
+  ],
+  "author": "Dave Mathews",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/davenmathews/Maintenance-Tracker-front-end/issues"
+  },
+  "homepage": "https://github.com/davenmathews/Maintenance-Tracker-front-end#readme",
+  "devDependencies": {
+    "lite-server": "^2.4.0",
+    "webpack": "^4.12.2",
+    "webpack-cli": "^3.0.8"
+  }
+}
