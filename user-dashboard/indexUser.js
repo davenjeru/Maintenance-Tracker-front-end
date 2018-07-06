@@ -67,14 +67,17 @@ if (userEmailContainer) {
             } else if (request.status === 'Resolved') {
                 cardHeader.className = 'card-header-resolved'
             }
-            // add heading and date to the header
+            // add heading, date and the request status to the header
             let h2 = document.createElement('h2');
             h2.innerHTML = request.title;
             let h4 = document.createElement('h4');
             let date = new Date(request.date_requested);
             h4.innerHTML = date.toDateString();
+            let h5 = document.createElement('h5');
+            h5.innerHTML = request.status;
             cardHeader.appendChild(h2);
             cardHeader.appendChild(h4);
+            cardHeader.appendChild(h5);
             card.appendChild(cardHeader);
 
             // create the card body
